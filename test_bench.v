@@ -5,10 +5,10 @@ module test_bench #(parameter delay = 499) ();
     reg signed [15:0] x_in;
     wire signed [15:0] x_out_1;
     wire signed [15:0] y_out_1;
-    wire signed [15:0] x_out_2;
-    wire signed [15:0] y_out_2;
-    wire signed [15:0] x_out_3;
-    wire signed [15:0] y_out_3;
+    // wire signed [15:0] x_out_2;
+    // wire signed [15:0] y_out_2;
+    // wire signed [15:0] x_out_3;
+    // wire signed [15:0] y_out_3;
     reg signed [15:0] y_in;
     reg signed [15:0] sig_in [7999:0];
     reg [12:0] address;
@@ -26,8 +26,8 @@ module test_bench #(parameter delay = 499) ();
     end
     always #5 clk = ~clk;
     Filter_block_1 filter1(.clk(clk), .rst_p(rst_p), .x_in(x_in), .x_out(x_out_1), .y_in(y_in), .y_out(y_out_1));
-    Filter_block_2 filter2(.clk(clk), .rst_p(rst_p), .x_in(x_out_1), .x_out(x_out_2), .y_in(y_out_1), .y_out(y_out_2));
-    Filter_block_3 filter3(.clk(clk), .rst_p(rst_p), .x_in(x_out_2), .x_out(x_out_3), .y_in(y_out_2), .y_out(y_out_3));
+    // Filter_block_2 filter2(.clk(clk), .rst_p(rst_p), .x_in(x_out_1), .x_out(x_out_2), .y_in(y_out_1), .y_out(y_out_2));
+    // Filter_block_3 filter3(.clk(clk), .rst_p(rst_p), .x_in(x_out_2), .x_out(x_out_3), .y_in(y_out_2), .y_out(y_out_3));
     always @(posedge clk or posedge rst_p) begin
         if(address == 7999 || rst_p) begin
             address <= 0;
@@ -39,7 +39,7 @@ module test_bench #(parameter delay = 499) ();
     always @(address) begin
         x_in <= sig_in[address];
     end
-    always @(x_in) begin
+    always @(y_out_1) begin
         $display("y_out = %b", y_out_1);
     end
 
