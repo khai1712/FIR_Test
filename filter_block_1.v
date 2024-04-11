@@ -1,7 +1,7 @@
 module Filter_block_1
 #(
     parameter n = 63,
-    parameter signed [0:16*n-1] coef = 
+    parameter  [0:16*n-1] coef = 
     {
     16'b1111111111111111,
     16'b1111111111111111,
@@ -66,25 +66,28 @@ module Filter_block_1
     16'b1111111111111111,
     16'b1111111111111111,
     16'b1111111111111111
+
+
     }
 )
 
 (
     input clk, 
     input rst_p, 
-    input signed [15:0] x_in,
-    input signed [15:0] y_in,
-    output reg signed [15:0] x_out,
-    output reg signed [15:0] y_out
+    input  [15:0] x_in,
+    input  [15:0] y_in,
+    output reg  [15:0] x_out,
+    output reg  [15:0] y_out
 );  
+    //reg [0:16*n-1] coef_cov;
     reg [15:0] mul;
-    reg signed [0:16*(n-1)-1] delay_x;
+    reg  [0:16*(n-1)-1] delay_x;
     integer i, j, k;
-    reg signed [15:0] sum;
+    reg  [15:0] sum;
     
-    //for(l=0; l<n; l=l+1) begin
-    //    coef_cov[16*k +: 16] = (coef[16*l] == 1'b1) ? {8'b11111111, coef[16*l +: 16]} : {8'b00000000, coef[16*l +: 16]};
-    //end
+    // for(l=0; l<n; l=l+1) begin
+    //     coef_cov[16*k +: 16] = (coef[16*l] == 1'b1) ? {8'b11111111, coef[16*l +: 16]} : {8'b00000000, coef[16*l +: 16]};
+    // end
 
     always @(posedge clk or posedge rst_p) begin
         if(rst_p) begin
@@ -109,8 +112,8 @@ module Filter_block_1
         mul = (x_in) * (coef[0:15]); //Lấy 16 bit cuối của phép nhân
         sum = sum + mul; 
         for(k=0; k<n-1; k=k+1) begin
-            mul = delay_x[16*k +: 16] * coef[16*(k+1) +: 16];
-            sum = sum + mul; //Lấy 16 bit cuối của phép nhân
+            mul = delay_x[16*k +: 16] * coef[16*(k+1) +: 16]; //Lấy 16 bit cuối của phép nhân
+            sum = sum + mul; 
         end
     end
     
