@@ -1,4 +1,4 @@
-module Filter_block_2
+module Filter_block_4
 #(
     parameter n = 63,
     parameter signed [0:16*n-1] coef = 
