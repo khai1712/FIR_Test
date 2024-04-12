@@ -5,7 +5,7 @@ module test_bench();
     reg signed [15:0] sig_in [7999:0];
     reg [12:0] address_1;
     reg [12:0] address_2;
-    wire signed [0:31] sig_out_1, sig_out_2, sig_out_3, sig_out_4, sig_out_5, sig_out_6, sig_out_7, sig_out_8;
+    wire signed [0:15] sig_out_1, sig_out_2, sig_out_3, sig_out_4, sig_out_5, sig_out_6, sig_out_7, sig_out_8;
     reg [0:2] amp_coef_1, amp_coef_2, amp_coef_3, amp_coef_4, amp_coef_5, amp_coef_6, amp_coef_7, amp_coef_8;
     initial begin
         $readmemb("sig_in.txt", sig_in);
