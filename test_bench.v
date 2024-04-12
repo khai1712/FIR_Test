@@ -1,38 +1,37 @@
 `timescale 1ps/1ps
 
-module test_bench #(parameter delay = 499) ();
-    reg clk, rst_p, ena;
-    reg  [15:0] x_in;
-    wire  [15:0] x_out_1;
-    wire  [15:0] y_out_1;
+module test_bench ();
+    reg clk, rst_n, ena;
+    reg signed [15:0] x_in;
+    //wire  [15:0] x_out_1;
+    wire signed  [31:0] y_out;
     // wire  [15:0] x_out_2;
     // wire  [15:0] y_out_2;
     // wire  [15:0] x_out_3;
     // wire  [15:0] y_out_3;
-    reg  [15:0] y_in;
-    reg  [15:0] sig_in [7999:0];
-    reg  [15:0] sig_out[8061:0];
+    reg signed [15:0] sig_in [7999:0];
+    reg signed [32:0] sig_out[8061:0];
     reg [12:0] address_1;
     reg [12:0] address_2;
     initial begin
         $readmemb("sig_in.txt", sig_in);
     end
     initial begin
-        address_2 = 0;
         clk = 0;
-        x_in = 0;
-        y_in = 0;
+        address_2 = 0;
+        rst_n = 1; #20;
+        rst_n = 0; #50;
+        rst_n = 1; #20;
         ena = 1;
-        rst_p = 1;
-        #1
-        rst_p = 0;
+        address_1 = 0;
+        address_2 = 0;
     end
     always #5 clk = ~clk;
-    Filter_block_1 filter1(.clk(clk), .rst_p(rst_p), .x_in(x_in), .x_out(x_out_1), .y_in(y_in), .y_out(y_out_1));
+    Filter_block_1 filter1(.clk(clk), .rst_n(rst_n), .x_in(x_in), .y_out(y_out), .ena(ena));
     // Filter_block_2 filter2(.clk(clk), .rst_p(rst_p), .x_in(x_out_1), .x_out(x_out_2), .y_in(y_out_1), .y_out(y_out_2));
     // Filter_block_3 filter3(.clk(clk), .rst_p(rst_p), .x_in(x_out_2), .x_out(x_out_3), .y_in(y_out_2), .y_out(y_out_3));
-    always @(posedge clk or posedge rst_p) begin
-        if(address_1 == 7999 || rst_p) begin
+    always @(posedge clk or negedge rst_n) begin
+        if(address_1 == 7999) begin
             address_1 <= 0;
         end 
         else begin
@@ -48,10 +47,10 @@ module test_bench #(parameter delay = 499) ();
             $stop;
         end
         else begin
-            sig_out[address_2] = y_out_1;
+            sig_out[address_2] = y_out;
             address_2 = address_2 + 1;
         end
-        $display("y_out = %b", y_out_1);
+        //$display("y_out = %b", y_out);
     end
 
 endmodule
