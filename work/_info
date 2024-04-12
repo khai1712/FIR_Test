@@ -10,30 +10,54 @@ z2
 cModel Technology
 Z0 dD:/ModelSim/FIR Filter
 vaddition
-Z1 !s110 1712908732
+Z1 !s110 1712942878
 !i10b 1
 !s100 F3IZi`O[>V26m_fOB4aU90
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IM7JZKTzB@833Sc6WTR9>62
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1712908709
+Z4 w1712940943
 Z5 8D:/ModelSim/FIR Filter/multiply.v
 Z6 FD:/ModelSim/FIR Filter/multiply.v
-!i122 528
+!i122 667
 L0 17 5
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1712908732.000000
+Z8 !s108 1712942878.000000
 Z9 !s107 D:/ModelSim/FIR Filter/multiply.v|
 Z10 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/multiply.v|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
+vAmplifier
+Z13 !s110 1712942877
+!i10b 1
+!s100 Tig9TK:z54DN26?98geI`0
+R2
+I]GAz?ke3l?<KMLi:ja>>k3
+R3
+R0
+w1712942721
+8D:/ModelSim/FIR Filter/Amplifier.v
+FD:/ModelSim/FIR Filter/Amplifier.v
+!i122 656
+L0 1 49
+R7
+r1
+!s85 0
+31
+!s108 1712942876.000000
+!s107 D:/ModelSim/FIR Filter/Amplifier.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/Amplifier.v|
+!i113 1
+R11
+R12
+n@amplifier
 vdelay_block
-Z13 !s110 1712594692
+Z14 !s110 1712594692
 !i10b 1
 !s100 ZcaRB6K1Zdb_VRWVD:a=o1
 R2
@@ -41,20 +65,68 @@ IBa:68;CMbQC5YHQ5BW4O62
 R3
 R0
 w1712325663
-Z14 8D:/ModelSim/FIR Filter/delay_block.v
-Z15 FD:/ModelSim/FIR Filter/delay_block.v
+Z15 8D:/ModelSim/FIR Filter/delay_block.v
+Z16 FD:/ModelSim/FIR Filter/delay_block.v
 !i122 159
 L0 1 19
 R7
 r1
 !s85 0
 31
-Z16 !s108 1712594692.000000
-Z17 !s107 D:/ModelSim/FIR Filter/delay_block.v|
-Z18 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/delay_block.v|
+Z17 !s108 1712594692.000000
+Z18 !s107 D:/ModelSim/FIR Filter/delay_block.v|
+Z19 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/delay_block.v|
 !i113 1
 R11
 R12
+vEqualizer
+R13
+!i10b 1
+!s100 5lT1oO>1XTm7E41o3XCfb1
+R2
+Ih=NL1FHB_OP^J6AAhRR;K1
+R3
+R0
+w1712942580
+8D:/ModelSim/FIR Filter/Equalizer.v
+FD:/ModelSim/FIR Filter/Equalizer.v
+!i122 657
+L0 1 27
+R7
+r1
+!s85 0
+31
+Z20 !s108 1712942877.000000
+!s107 D:/ModelSim/FIR Filter/Equalizer.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/Equalizer.v|
+!i113 1
+R11
+R12
+n@equalizer
+vFilter
+R13
+!i10b 1
+!s100 TnOd0g57e6^P:S_k@cIIS1
+R2
+I1G<[gIbAW8KJoYb3f8<4Q0
+R3
+R0
+w1712931185
+8D:/ModelSim/FIR Filter/Filter.v
+FD:/ModelSim/FIR Filter/Filter.v
+!i122 658
+L0 1 18
+R7
+r1
+!s85 0
+31
+R20
+!s107 D:/ModelSim/FIR Filter/Filter.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/Filter.v|
+!i113 1
+R11
+R12
+n@filter
 vFilter_block
 !s110 1712717980
 !i10b 1
@@ -64,8 +136,8 @@ IDYUV`XBGkY9V?=XgALV3<0
 R3
 R0
 w1712717958
-Z19 8D:/ModelSim/FIR Filter/filter_block.v
-Z20 FD:/ModelSim/FIR Filter/filter_block.v
+Z21 8D:/ModelSim/FIR Filter/filter_block.v
+Z22 FD:/ModelSim/FIR Filter/filter_block.v
 !i122 321
 L0 1 53
 R7
@@ -73,30 +145,30 @@ r1
 !s85 0
 31
 !s108 1712717980.000000
-Z21 !s107 D:/ModelSim/FIR Filter/filter_block.v|
-Z22 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block.v|
+Z23 !s107 D:/ModelSim/FIR Filter/filter_block.v|
+Z24 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block.v|
 !i113 1
 R11
 R12
 n@filter_block
 vFilter_block_1
-R1
+R13
 !i10b 1
-!s100 LFOTCQ:GM8OOMd:<2S:BE3
+!s100 i5FNggh`_DfRJ2TFMPK6@1
 R2
-IR0O:T1D]czRRTMAmYBdMj2
+IF=22j<Y7e?ZAVNPUz;JXR3
 R3
 R0
-w1712905115
+w1712941190
 8D:/ModelSim/FIR Filter/filter_block_1.v
 FD:/ModelSim/FIR Filter/filter_block_1.v
-!i122 527
-L0 1 201
+!i122 659
+L0 1 175
 R7
 r1
 !s85 0
 31
-R8
+R20
 !s107 D:/ModelSim/FIR Filter/filter_block_1.v|
 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_1.v|
 !i113 1
@@ -104,23 +176,23 @@ R11
 R12
 n@filter_block_1
 vFilter_block_2
-Z23 !s110 1712745403
+R13
 !i10b 1
-!s100 L:HKC2ggADVEeW4?UQBnK0
+!s100 foQ@6W:@imVfJ^V^BcKgY1
 R2
-IJ2eA1hz4Ro?5P=0b>O?]_2
+IWUa55bz:G=PJ]g<e[=QhH2
 R3
 R0
-w1712745377
+w1712935484
 8D:/ModelSim/FIR Filter/filter_block_2.v
 FD:/ModelSim/FIR Filter/filter_block_2.v
-!i122 402
-Z24 L0 1 77
+!i122 660
+L0 2 201
 R7
 r1
 !s85 0
 31
-Z25 !s108 1712745403.000000
+R20
 !s107 D:/ModelSim/FIR Filter/filter_block_2.v|
 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_2.v|
 !i113 1
@@ -128,29 +200,149 @@ R11
 R12
 n@filter_block_2
 vFilter_block_3
-R23
+R13
 !i10b 1
-!s100 YM>M?]QM5R_`F2LV5G[Th2
+!s100 DXAD`DUn8=G5LJKIJ3M6K0
 R2
-Ibil5Xaim=<PAS?aof?F@;3
+I326ZcCi8ILK6dfcMPDPfQ0
 R3
 R0
-w1712745389
-8D:/ModelSim/FIR Filter/fillter_block_3.v
-FD:/ModelSim/FIR Filter/fillter_block_3.v
-!i122 400
-R24
+w1712939702
+8D:/ModelSim/FIR Filter/filter_block_3.v
+FD:/ModelSim/FIR Filter/filter_block_3.v
+!i122 661
+Z25 L0 1 200
 R7
 r1
 !s85 0
 31
-R25
-!s107 D:/ModelSim/FIR Filter/fillter_block_3.v|
-!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/fillter_block_3.v|
+R20
+!s107 D:/ModelSim/FIR Filter/filter_block_3.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_3.v|
 !i113 1
 R11
 R12
 n@filter_block_3
+vFilter_block_4
+R13
+!i10b 1
+!s100 6MJG:Bd6Xi4TVP[`ddcNP2
+R2
+Io[SdiK6]bOWg]`>7<k89n1
+R3
+R0
+w1712940760
+8D:/ModelSim/FIR Filter/filter_block_4.v
+FD:/ModelSim/FIR Filter/filter_block_4.v
+!i122 662
+R25
+R7
+r1
+!s85 0
+31
+R20
+!s107 D:/ModelSim/FIR Filter/filter_block_4.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_4.v|
+!i113 1
+R11
+R12
+n@filter_block_4
+vFilter_block_5
+R13
+!i10b 1
+!s100 cHV<NbLDYRBQa^j6fU^Cf3
+R2
+I2dma]zX>?[Pd_=lP=cSGe0
+R3
+R0
+w1712935518
+8D:/ModelSim/FIR Filter/filter_block_5.v
+FD:/ModelSim/FIR Filter/filter_block_5.v
+!i122 663
+Z26 L0 1 201
+R7
+r1
+!s85 0
+31
+R20
+!s107 D:/ModelSim/FIR Filter/filter_block_5.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_5.v|
+!i113 1
+R11
+R12
+n@filter_block_5
+vFilter_block_6
+R1
+!i10b 1
+!s100 GTA`eGh_IAUbK<ezmZ2n<3
+R2
+IUoGfb[SKHjnR09F:<dFSj3
+R3
+R0
+w1712935522
+8D:/ModelSim/FIR Filter/filter_block_6.v
+FD:/ModelSim/FIR Filter/filter_block_6.v
+!i122 664
+R26
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/ModelSim/FIR Filter/filter_block_6.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_6.v|
+!i113 1
+R11
+R12
+n@filter_block_6
+vFilter_block_7
+R1
+!i10b 1
+!s100 Jj8O[A[<G9VGz6gLg??ZP0
+R2
+IDm=BPZ=o:M3<RIj^Lk4552
+R3
+R0
+w1712935526
+8D:/ModelSim/FIR Filter/filter_block_7.v
+FD:/ModelSim/FIR Filter/filter_block_7.v
+!i122 665
+R26
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/ModelSim/FIR Filter/filter_block_7.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_7.v|
+!i113 1
+R11
+R12
+n@filter_block_7
+vFilter_block_8
+R1
+!i10b 1
+!s100 35K5hCiZ7oPB`hX19D`MT2
+R2
+IXCUSAI_n^YPkOc[l8S]:92
+R3
+R0
+w1712935530
+8D:/ModelSim/FIR Filter/filter_block_8.v
+FD:/ModelSim/FIR Filter/filter_block_8.v
+!i122 666
+R26
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/ModelSim/FIR Filter/filter_block_8.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/filter_block_8.v|
+!i113 1
+R11
+R12
+n@filter_block_8
 vFIR_Filter
 !s110 1712503883
 !i10b 1
@@ -178,15 +370,15 @@ n@f@i@r_@filter
 vmultiply
 R1
 !i10b 1
-!s100 []OQUb47KL7CSU5gO15ki2
+!s100 B7UO`bFCMLigejGj;;mc>0
 R2
-Ima3z6]oX^HkD?f3]hGBDZ3
+IBhJQajaT]MRRZHYAVd0[S3
 R3
 R0
 R4
 R5
 R6
-!i122 528
+!i122 667
 L0 1 15
 R7
 r1
@@ -199,25 +391,25 @@ R10
 R11
 R12
 vpulse_1s
-Z26 !s110 1712212913
+!s110 1712212913
 !i10b 1
 !s100 WYinKlb]`23N3Cf=Sg?X93
 R2
 I?`T9=ocJUfbJWXQ;`[DOX0
 R3
 R0
-Z27 w1712212579
-R14
+w1712212579
 R15
+R16
 !i122 14
 L0 21 25
 R7
 r1
 !s85 0
 31
-Z28 !s108 1712212913.000000
-R17
+!s108 1712212913.000000
 R18
+R19
 !i113 1
 R11
 R12
@@ -230,8 +422,8 @@ IQSDihPNEfF@eI@NJ6Mb_K3
 R3
 R0
 w1712716911
-R19
-R20
+R21
+R22
 !i122 318
 L0 62 14
 R7
@@ -239,14 +431,14 @@ r1
 !s85 0
 31
 !s108 1712716915.000000
-R21
-R22
+R23
+R24
 !i113 1
 R11
 R12
 n@sign@extension
 vtapped_delay_block
-R13
+R14
 !i10b 1
 !s100 ?bLhYWQOm6Sjc4MDnD@WF3
 R2
@@ -262,7 +454,7 @@ R7
 r1
 !s85 0
 31
-R16
+R17
 !s107 D:/ModelSim/FIR Filter/tapped_delay_block.v|
 !s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/tapped_delay_block.v|
 !i113 1
@@ -271,16 +463,16 @@ R12
 vtest_bench
 R1
 !i10b 1
-!s100 V@hi@YHzEgMjF^n>Cg6Ud3
+!s100 kQM=8H9oo9GfINmi^3>`21
 R2
-IC[DWVKgJ>94H_@X4gSBd`0
+I63d>5Z?n;I_YScXz`o5TY2
 R3
 R0
-w1712891561
+w1712942587
 8D:/ModelSim/FIR Filter/test_bench.v
 FD:/ModelSim/FIR Filter/test_bench.v
-!i122 529
-L0 3 54
+!i122 668
+L0 1 68
 R7
 r1
 !s85 0
@@ -292,25 +484,25 @@ R8
 R11
 R12
 vtest_filter
-R26
+R1
 !i10b 1
-!s100 O2_QVMaf7ZC`Xn^EV<Yji0
+!s100 elZdYk9YmY9M<[EQSQ=M:0
 R2
-IeOIhZP5QKzF=Y1Pm``1TI1
+IZQVN2`SZ7SM@BfEc13T;:1
 R3
 R0
-R27
-R14
-R15
-!i122 14
-L0 49 22
+w1712940717
+8D:/ModelSim/FIR Filter/test_filter.v
+FD:/ModelSim/FIR Filter/test_filter.v
+!i122 669
+L0 3 56
 R7
 r1
 !s85 0
 31
-R28
-R17
-R18
+R8
+!s107 D:/ModelSim/FIR Filter/test_filter.v|
+!s90 -reportprogress|300|-work|work|D:/ModelSim/FIR Filter/test_filter.v|
 !i113 1
 R11
 R12
